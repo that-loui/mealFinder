@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find Meal</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-dark text-light">
+    <header class="container d-flex justify-content-center mt-4 header ">
+      <h2 class="display-6 mb-3">Meal Finder 🍖</h2>
+      <form class="d-flex form">
+        <div class="mb-3 input-group w-100">
+          <input
+            type="text"
+            class="form-control w-75 search"
+            name="Search"
+            id="Search"
+            placeholder="Enter a Meal"
+          />
+          <input
+            type="submit"
+            value="🔍"
+            class="rounded-left form-control w-25"
+          />
+        </div>
+      </form>
+    </header>
+    <main class="container d-flex flex-column align-items-center">
+        <img src="https://media.giphy.com/media/9MImS9neQuoRa3D19h/giphy.gif" alt="loading..." class="w-25 align-self-center loader display">
+      <div class="result-header"></div>
+      <div class="results w-100 row justify-content-center"></div>
+      <div class="single-result"></div>
+    </main>
+    <script src="./js/bootstrap.bundle.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
+
