@@ -5,6 +5,7 @@ const searchTitle = document.querySelector('.result-header');
 const searchBody = document.querySelector('.results');
 const singleMeal = document.querySelector('.single-result');
 const loader = document.querySelector('.loader');
+const resultLink = document.querySelector('.result-link');
 
 async function fetchMeals() {
   singleMeal.innerHTML = '';
@@ -92,7 +93,7 @@ let displayDetails = (meal) => {
   }
   singleMeal.innerHTML = `
   <div class="details text-center">
-  <div class="detailsHeader ">
+  <div class="detailsHeader" id="result-head">
     <h2>${meal.strMeal}</h2>
     <img src="${meal.strMealThumb}" alt="${
     meal.strMeal
@@ -156,6 +157,11 @@ searchBody.addEventListener('click', (e) => {
   });
   if (target) {
     let mealID = target.getAttribute('data-mealId');
-    fetchDetailsById(mealID);
+    if(fetchDetailsById(mealID)){
+      setTimeout(()=>{
+        resultLink.click()
+      }, 2000)
+    };
+    
   }
 });

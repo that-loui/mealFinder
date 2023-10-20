@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="bg-dark text-light">
-    <header class="container d-flex justify-content-center mt-4 header">
+    <header class="container d-flex justify-content-center mt-4 header sticky-top bg-dark">
       <h2 class="display-6 mb-3">Meal Finder 🍖</h2>
       <form class="d-flex form">
         <div class="mb-3 input-group w-100">
@@ -36,7 +36,8 @@
       />
       <div class="result-header"></div>
       <div class="results w-100 row justify-content-center"></div>
-      <div class="single-result"></div>
+      <div class="single-result" id="single-result"></div>
+      <a href="#single-result" class="result-link"></a>
     </main>
     <script src="./js/bootstrap.bundle.js"></script>
     <script src="./js/script.js"></script>
