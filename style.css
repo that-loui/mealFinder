@@ -13,7 +13,7 @@ main .meal {
   cursor: pointer;
 }
 main .meal:hover {
-  transform: scale(0.9);
+  transform: scale(0.88);
 }
 main .display {
   display: none;
